@@ -1,3 +1,23 @@
 footer{
+	background: #22bce0;
+	text-align: center;
+	color: rgba(255,255,255,0.7);
+	padding: 1em;
 	
-}
+	p{
+		&:first-child{
+			margin-bottom: 0;
+		}
+
+		&:last-child{
+			margin-top: 0;
+
+			&:after{
+				content: " -";
+			}
+			&:before{
+				content: "- ";				
+			}
+		} //last-child
+	}	//p
+} //footer
