@@ -8,6 +8,7 @@ var $form = $('#form'),
 
 function showForm() {
 	$form.slideToggle();
+	$list.slideToggle();
 	return false;
 } //showForm
 
@@ -23,9 +24,10 @@ function addPost(){
 		$clone.hide();
 
 		$list.prepend($clone);
-
+		showForm();
 		$clone.fadeIn();
-
+		$title.val('');
+		$url.val('');
 		return false;
 
 }//addPost
