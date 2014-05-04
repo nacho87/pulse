@@ -21,13 +21,14 @@ var id = setInterval(function(){
 
 
 
-function showForm() {
+function showForm(e) {
+	e.preventDefault();
 	$form.slideToggle();
 	$list.slideToggle();
-	return false;
 } //showForm
 
-function addPost(){
+function addPost(e){
+		
 	var url = $url.val(),
 			title = $title.val(),
 			$clone = $post.clone();
