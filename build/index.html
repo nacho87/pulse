@@ -2,16 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="utf-8"/>
+    <meta name="description" content="Curso de Mejorandola"/>
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
     
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Pulse: Home</title>
-    <meta description="Curso de Mejorandola"/>
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    
     <link href="stylesheets/all.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="javascripts/all.js" type="text/javascript"></script>
+    
+    
 
   </head>
   
@@ -19,24 +24,30 @@
     <header>
 	<figure id="logo">
 		<img src="images/logo.png" alt="Logo">
-		<h1>Pulse 214: </h1>
-		<figure id="avatar">
-			<img src="images/avatar.jpg" alt="Avatar">
-		</figure>
+	</figure>
+	<h1>Pulse 214: </h1>
+	<figure id="avatar">
+		<img src="images/avatar.jpg" alt="Avatar">
 	</figure>
 </header> <!-- header -->
     <nav>
 	<ul>
 		<li><a href="#">Python</a></li>
 		<li><a href="#">Html5</a></li>
-		<li><a href="#">Javascrip</a></li>
+		<li><a href="#">Javascript</a></li>
 		<li><a href="#">Css3</a></li>
-		<li><a href="#">Django</a></li>
+		<li><a href="#">Ruby</a></li>
 		<li id="publish">
-			<a href="#">Publicar</a>
+			<a href="#" id="show_form" class="icon-pen">Publicar</a>
 		</li>
 	</ul>
 </nav> <!-- nav -->
+    <form action="" id="form" class="form">
+	<input type="text" id="title_form" placeholder="Titulo" required>
+	<input type="url" id="url_form" placeholder="Link" required>
+	<input type="submit" value="Agregar">
+</form>
+
 
     <section id="content">
 	<article class="item">
@@ -44,8 +55,8 @@
 			<img src="images/image.jpg" alt="Article Image">
 		</figure> <!-- .image_item -->
 
-		<h2>
-			Title Post
+		<h2 class="title_item">
+			<a href="#">Title Post</a>
 		</h2>
 
 		<div class="author">
@@ -54,19 +65,163 @@
 
 		<div class="data_item">
 			<a href="" class="tag_item">pony</a>
-			<span>hace 
+			<span class="date_item">hace 
 				<strong>5</strong> min
 			</span>
-			<a href="#" class="comment_item">69</a>
-			<a href="#" class="save_item">star</a>
 		</div> <!-- .data_item -->
 
 		<div class="vote">
-			<a href="#" class="up">up</a>
+			<a href="#" class="up icon-caret-up"></a>
 			72
-			<a href="#" class="down">down</a>			
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
+		</div> <!-- .vote -->	
+	</article> <!-- .item -->
+
+	<article class="item">
+		<figure class="image_item">
+			<img src="images/image.jpg" alt="Article Image">
+		</figure> <!-- .image_item -->
+
+		<h2 class="title_item">
+			<a href="#">Rockstar Guitarrista Frontend: La historia de un músico emprendedor</a>
+		</h2>
+
+		<div class="author">
+			by <a href="#">Nacho</a>
+		</div> <!-- .author -->
+
+		<div class="data_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="date_item">hace 
+				<strong>5</strong> min
+			</span>
+		</div> <!-- .data_item -->
+
+		<div class="vote">
+			<a href="#" class="up icon-caret-up"></a>
+			72
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
+		</div> <!-- .vote -->		
+	</article> <!-- .item -->
+
+	<article class="item">
+		<figure class="image_item">
+			<img src="images/image.jpg" alt="Article Image">
+		</figure> <!-- .image_item -->
+
+		<h2 class="title_item">
+			<a href="#">Crear y exportar SVG en Illustrator e Inkscape</a>
+		</h2>
+
+		<div class="author">
+			by <a href="#">Nacho</a>
+		</div> <!-- .author -->
+
+		<div class="data_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="date_item">hace 
+				<strong>5</strong> min
+			</span>
+		</div> <!-- .data_item -->
+
+		<div class="vote">
+			<a href="#" class="up icon-caret-up"></a>
+			72
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
 		</div> <!-- .vote -->
-		
+	</article> <!-- .item -->
+
+	<article class="item">
+		<figure class="image_item">
+			<img src="images/image.jpg" alt="Article Image">
+		</figure> <!-- .image_item -->
+
+		<h2 class="title_item">
+			<a href="#">Cómo usar los selectores de hermano en CSS3</a>
+		</h2>
+
+		<div class="author">
+			by <a href="#">Nacho</a>
+		</div> <!-- .author -->
+
+		<div class="data_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="date_item">hace 
+				<strong>5</strong> min
+			</span>
+		</div> <!-- .data_item -->
+
+		<div class="vote">
+			<a href="#" class="up icon-caret-up"></a>
+			72
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
+		</div> <!-- .vote -->	
+	</article> <!-- .item -->
+
+	<article class="item">
+		<figure class="image_item">
+			<img src="images/image.jpg" alt="Article Image">
+		</figure> <!-- .image_item -->
+
+		<h2 class="title_item">
+			<a href="#">Ataques hacker modernos a los que toda web está expuesta</a>
+		</h2>
+
+		<div class="author">
+			by <a href="#">Nacho</a>
+		</div> <!-- .author -->
+
+		<div class="data_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="date_item">hace 
+				<strong>5</strong> min
+			</span>
+		</div> <!-- .data_item -->
+
+		<div class="vote">
+			<a href="#" class="up icon-caret-up"></a>
+			72
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
+		</div> <!-- .vote -->	
+	</article> <!-- .item -->
+
+	<article class="item">
+		<figure class="image_item">
+			<img src="images/image.jpg" alt="Article Image">
+		</figure> <!-- .image_item -->
+
+		<h2 class="title_item">
+			<a href="#">Internet entera en riesgo por el bug Heartbleed de SSL</a>
+		</h2>
+
+		<div class="author">
+			by <a href="#">Nacho</a>
+		</div> <!-- .author -->
+
+		<div class="data_item">
+			<a href="" class="tag_item">pony</a>
+			<span class="date_item">hace 
+				<strong>5</strong> min
+			</span>
+		</div> <!-- .data_item -->
+
+		<div class="vote">
+			<a href="#" class="up icon-caret-up"></a>
+			72
+			<a href="#" class="down icon-caret-down"></a>			
+			<a href="#" class="comment_item">69</a>
+			<a href="#" class="save_item icon-star"></a>
+		</div> <!-- .vote -->	
 	</article> <!-- .item -->
 </section> <!-- #content -->
 
@@ -79,5 +234,8 @@
 	</p>
 </footer> <!-- footer -->
 
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascripts/all.js" type="text/javascript"></script>
+    
   </body>
 </html>
