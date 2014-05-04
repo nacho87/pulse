@@ -5,9 +5,25 @@ var $form = $('#form'),
 		$list = $('#content'),
 		$post = $('.item').first();
 
+//test sessionStorage and localStorage
+//set console localStorage.autosave ="1"
+
+if(localStorage.getItem('autosave')) {
+	$title.val(sessionStorage.getItem('title'));
+	$url.val(sessionStorage.getItem('url'));
+}
+
+var id = setInterval(function(){
+	sessionStorage.setItem('title', $title.val());
+	sessionStorage.setItem('url', $url.val());
+
+},100);
+
+
 
 function showForm() {
 	$form.slideToggle();
+	$list.slideToggle();
 	return false;
 } //showForm
 
@@ -23,9 +39,10 @@ function addPost(){
 		$clone.hide();
 
 		$list.prepend($clone);
-
+		showForm();
 		$clone.fadeIn();
-
+		$title.val('');
+		$url.val('');
 		return false;
 
 }//addPost
