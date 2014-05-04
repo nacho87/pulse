@@ -16,11 +16,15 @@ header{
 	}//h1
 
 	#logo{
-		img{
 			border-right: 1px solid #fff;		
 			margin-right: 0.5em;
 			padding-right: 0.5em;
+		img{
 			width: 52px;
+			@include transition(0.5s);
+			&:hover{
+				@include transform (rotate(360deg));				
+			}
 		}
 	} //logo
 
